@@ -1,28 +1,26 @@
-document.getElementById("registrationForm").addEventListener("submit", function (e) {
+// script.js
+document.getElementById("registerForm").addEventListener("submit", function (e) {
   e.preventDefault();
-
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
-  const password = document.getElementById("password").value;
-  const confirmPassword = document.getElementById("confirmPassword").value;
-  const errorMessage = document.getElementById("errorMessage");
+  const password = document.getElementById("password").value.trim();
+  const confirm = document.getElementById("confirm").value.trim();
 
-  if (!name || !email || !password || !confirmPassword) {
-    errorMessage.textContent = "يرجى ملء جميع الحقول.";
+  if (!name || !email || !password || !confirm) {
+    alert("Please fill in all fields.");
     return;
   }
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
-    errorMessage.textContent = "يرجى إدخال بريد إلكتروني صحيح.";
+    alert("Please enter a valid email.");
     return;
   }
 
-  if (password !== confirmPassword) {
-    errorMessage.textContent = "كلمتا المرور غير متطابقتين.";
+  if (password !== confirm) {
+    alert("Passwords do not match.");
     return;
   }
 
-  errorMessage.style.color = "green";
-  errorMessage.textContent = "تم التسجيل بنجاح!";
+  alert("Registration successful!");
 });
