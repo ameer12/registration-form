@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>نموذج التسجيل</title>
-  <link rel="stylesheet" href="style/style.css" />
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <form id="registrationForm">
-      <h2>نموذج التسجيل</h2>
-      <input type="text" id="name" placeholder="الاسم" required />
-      <input type="email" id="email" placeholder="البريد الإلكتروني" required />
-      <input type="password" id="password" placeholder="كلمة المرور" required />
-      <input type="password" id="confirmPassword" placeholder="تأكيد كلمة المرور" required />
-      <button type="submit">تسجيل</button>
-      <p id="errorMessage"></p>
+  <div class="overlay">
+    <form id="registerForm">
+      <h2>Register</h2>
+      <input type="text" id="name" placeholder="Full Name" />
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <input type="password" id="confirm" placeholder="Confirm Password" />
+      <button type="submit">SIGN UP</button>
     </form>
   </div>
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
