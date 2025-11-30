@@ -1,55 +1,49 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #4facfe, #00f2fe);
+  background-image: url('https://i.pinimg.com/originals/5e/OA/av/5eOAavAd3.jpg'); /* تأكد من استخدام رابط مباشر للصورة */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
 }
 
-.container {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+.overlay {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
   width: 320px;
+  text-align: center;
 }
 
 form h2 {
-  text-align: center;
+  color: #fff;
   margin-bottom: 20px;
-  color: #333;
 }
 
-input {
+form input {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: none;
+  border-radius: 6px;
   font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-button {
+form button {
   width: 100%;
   padding: 10px;
-  background: #4facfe;
+  background-color: #8000ff;
   color: white;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-button:hover {
-  background: #00c6ff;
-}
-
-#errorMessage {
-  color: red;
-  text-align: center;
+  font-weight: bold;
   margin-top: 10px;
-  font-size: 14px;
 }
