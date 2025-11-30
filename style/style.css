@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-image: url('https://iili.io/foD4na9.jpg');
+  background-image: url('https://i.ibb.co/wNbJgyL4/vecteezy-purple-minimalist-wallpaper-30621070.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -60,4 +60,4 @@ form button {
 
 form button:hover {
   background-color: #a64dff;
-}
+  }
